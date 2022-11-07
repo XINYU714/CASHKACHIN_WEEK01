@@ -1,0 +1,200 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+  }
+  
+  /* grid */
+  .section2-flex {
+    max-width: 1920px;
+    display: flex;
+    flex-direction: row;
+    margin: 0 auto 0 auto;
+    justify-content: center;
+  }
+  
+  /* Left div */
+  .left-sticky {
+    position: sticky;
+    top: 0;
+    height: 100vh;
+    width: 43%;
+  }
+  .left-sticky > div {
+    height: 50vh;
+    max-width: 580px;
+    border: 1px solid #333333;
+    margin: 0 -1px -1px auto;
+  }
+  
+  /* Temporary */
+  .left-sticky .left-first {
+    background: #333;
+  }
+  
+  .left-sticky .left-first > div {
+    width: fit-content;
+    margin: 90px auto 0 auto;
+  }
+  .left-sticky .left-first > div > div {
+    background-color: #fafafa;
+    margin-bottom: 40px;
+    padding: 10px;
+    border: 1px solid #333333;
+  }
+  .left-sticky .left-first h3 {
+    padding: 10px 40px;
+    /* Temporary */
+    font-size: 30px;
+    border: 1px solid #333333;
+  }
+  .left-sticky .left-first p {
+    margin-bottom: 20px;
+    color: #fafafa;
+  }
+  .left-sticky .left-last > div {
+    max-width: 374px;
+    margin: auto;
+  }
+  .left-sticky .left-last h3 {
+    padding: 60px 0 40px 0;
+    /* Temporary */
+    font-size: 30px;
+  }
+  .left-sticky .left-last p {
+    margin-bottom: 20px;
+  }
+  
+  /* Right div */
+  .right-scroll {
+    /* Temporary */
+    height: fit-content;
+    width: 57%;
+  }
+  .right-scroll > div {
+    border: 1px solid #333333;
+    margin-bottom: -1px;
+  }
+  .right-scroll .inner-fill {
+    width: 100%;
+  }
+  .right-scroll .inner-non-fill {
+    width: 720px;
+  }
+  
+  .right-scroll .right-first > div {
+    margin: 170px auto 170px auto;
+    width: fit-content;
+  }
+  
+  /* Temporary */
+  .right-scroll .right-first h2 {
+    font-size: 72px;
+  }
+  
+  .right-scroll .right-first .push-right {
+    margin-left: 20%;
+  }
+  
+  .right-scroll .right-first .black-block {
+    border: 1px solid #333333;
+    padding: 10px;
+    text-align: center;
+    margin-top: 100px;
+  }
+  
+  .right-scroll .right-first .black-block p {
+    background: #333333;
+    padding: 20px 60px;
+    color: #fafafa;
+    /* Temporary */
+    font-size: 30px;
+  }
+  
+  .week {
+    padding: 60px 0 100px 100px;
+  }
+  .week h2 {
+    margin-bottom: 20px;
+    padding: 8px 50px;
+    width: fit-content;
+    border: 1px solid #333333;
+    text-shadow: -1px 0px 0px #333333, 1px 0px 0px #333333, 0px -1px 0px #333333,
+      0px 1px 0px #333333;
+    color: #fafafa;
+  
+    /* Temporary */
+    font-size: 80px;
+  }
+  .week-1 {
+    background: #507fe6;
+  }
+  .week-2 {
+    background: #ff6d01;
+  }
+  .week-3 {
+    background: #50ea97;
+  }
+  
+  .topic {
+    padding: 45px 0 45px 14%;
+    /* Temporary */
+    background: #333;
+  }
+  
+  .topic h1 {
+    color: #fafafa;
+    /* Temporary */
+    font-size: 110px;
+  }
+  .inner-fill {
+    padding: 60px 0 60px 14%;
+  }
+  .inner-fill h2 {
+    text-shadow: -1px 0px 0px #333333, 1px 0px 0px #333333, 0px -1px 0px #333333,
+      0px 1px 0px #333333;
+    color: #fafafa;
+  
+    /* Temporary */
+    font-size: 72px;
+  }
+  
+  .running {
+    background: #333;
+    color: #fafafa;
+    max-width: 100%;
+    overflow: hidden;
+    /* Temporary */
+    font-size: 130px;
+  }
+  
+  .running h1 {
+    display: inline-block;
+    white-space: nowrap;
+  }
+  
+  .calender-section {
+    padding: 150px 0 250px 0;
+    width: fit-content;
+    margin: auto;
+  }
+  
+  .section4-text {
+    padding: 10px 20px;
+    margin-bottom: 20px;
+    width: fit-content;
+  }
+  
+  .green-box > span {
+    display: inline-flex;
+  }
+  
+  .section4-text.yellow-box {
+    background-color: #ffd217;
+  }
+  .section4-text.green-box {
+    background-color: #50ea97;
+  }
+  .section4-text.white-box {
+    border: 1px solid #333333;
+  }
