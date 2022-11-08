@@ -80,3 +80,17 @@ gsap.to(".rotate", {
   duration: 6,
   repeat: -1,
 });
+
+// section 3
+const timeLineRunning = gsap.timeline({
+  scrollTrigger: {
+    trigger: ".running",
+    start: "top 85%",
+    end: "top -1%",
+    scrub: true,
+  },
+});
+
+timeLineRunning.to(".running", {
+  xPercent: "50",
+});
