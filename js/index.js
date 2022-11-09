@@ -21,7 +21,7 @@ gsap.to(".typing1", {
   scrollTrigger: {
     trigger: ".contest",
     toggleActions: "play pause resume reset",
-    markers: true,
+    // markers: true,
   },
 });
 gsap.to(".typing2", {
@@ -31,12 +31,11 @@ gsap.to(".typing2", {
   scrollTrigger: {
     trigger: ".contest",
     toggleActions: "play pause resume reset",
-    markers: true,
+    // markers: true,
   },
 });
 
 ////section-2
-gsap.registerPlugin(ScrollTrigger, TextPlugin);
 
 gsap.utils.toArray(".popup").forEach((element) => {
   hide(element);
@@ -74,7 +73,7 @@ function hide(element) {
   gsap.set(element, { scale: 0, opacity: 0, visibility: "hidden" });
 }
 
-gsap.to(".rotate", {
+gsap.to(".rotate,.intro::after", {
   rotate: "360%",
   ease: "none",
   duration: 6,
