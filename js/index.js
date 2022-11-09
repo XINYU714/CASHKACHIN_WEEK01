@@ -21,7 +21,7 @@ gsap.to(".typing1", {
   scrollTrigger: {
     trigger: ".contest",
     toggleActions: "play pause resume reset",
-    markers: true,
+    // markers: true,
   },
 });
 gsap.to(".typing2", {
@@ -31,7 +31,7 @@ gsap.to(".typing2", {
   scrollTrigger: {
     trigger: ".contest",
     toggleActions: "play pause resume reset",
-    markers: true,
+    // markers: true,
   },
 });
 
