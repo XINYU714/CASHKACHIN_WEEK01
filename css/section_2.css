@@ -1,15 +1,5 @@
 .bg-chess {
-  position: sticky;
-  top: 0;
-  z-index: -5;
-}
-.bg-chess::after {
-  content: "";
-  width: 100vw;
-  height: 100vh;
-  position: absolute;
-  top: 0;
-  background: url(../src/chess.jpg);
+  background-image: url("/src/chess.png");
 }
 
 /* grid */
@@ -19,7 +9,6 @@
   flex-direction: row;
   margin: 0 auto 0 auto;
   justify-content: center;
-  z-index: 1;
 }
 
 /* Left div */
@@ -87,12 +76,31 @@
 .line {
   position: relative;
 }
-.right-scroll .right-first {
-  background: url(../src/bg_with_line.jpg);
+
+.right-scroll .right-first .line::before {
+  content: "";
+  width: 1px;
+  height: 792px;
+  background: #333;
+  position: absolute;
+  transform: rotate(45deg);
+  top: -300px;
+  left: 300px;
+  z-index: -1;
+}
+.right-scroll .right-first::after {
+  content: "";
+  width: 100%;
+  height: 100%;
+  background: #fafafa;
+  position: absolute;
+  top: 100%;
+  z-index: -2;
 }
 .right-scroll .right-first .push-right {
   margin-left: 20%;
 }
+
 .right-scroll .right-first .black-block {
   border: 1px solid #333333;
   padding: 10px;
@@ -169,12 +177,15 @@
   width: fit-content;
 }
 
-.running {
+.running h1 {
   color: #fafafa;
   max-width: 100%;
+  overflow: hidden;
+}
+
+.running h1 {
   display: inline-block;
   white-space: nowrap;
-  transform: translateX(-200%);
 }
 
 .calender-section {
@@ -186,7 +197,6 @@
 .section4-text {
   padding: 10px 20px;
   margin-bottom: 20px;
-  font-size: 30px;
   width: fit-content;
 }
 
@@ -202,25 +212,4 @@
 }
 .section4-text.white-box {
   border: 1px solid #333333;
-}
-
-.calender {
-  margin-top: 60px;
-  position: relative;
-}
-
-.calender img:last-child {
-  margin-left: -40px;
-}
-
-.calender .calender-stars {
-  position: absolute;
-}
-.calender .calender-stars:first-child {
-  top: -60px;
-  left: -180px;
-}
-.calender .calender-stars {
-  bottom: -100px;
-  right: -100px;
 }
