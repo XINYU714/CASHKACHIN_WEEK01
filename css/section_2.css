@@ -1,6 +1,11 @@
 .bg-chess {
   background-image: url("/src/chess.png");
 }
+.bg-green-dot-short {
+  background: url(../src/green-dot-short.jpg);
+  background-position-x: right;
+  background-repeat: no-repeat;
+}
 
 /* grid */
 .section2-flex {
@@ -151,6 +156,10 @@
 
 .topic {
   padding: 45px 0 45px 14%;
+  background: url(../src/green-dot-long.jpg);
+  background-position-x: right;
+  background-position-y: bottom;
+  background-repeat: no-repeat;
 }
 
 .topic h1 {
@@ -202,6 +211,7 @@
 
 .green-box > span {
   display: inline-flex;
+  margin-right: 5px;
 }
 
 .section4-text.yellow-box {
@@ -212,4 +222,110 @@
 }
 .section4-text.white-box {
   border: 1px solid #333333;
+}
+
+
+.calender {
+  margin-top: 60px;
+  position: relative;
+}
+
+.calender img:last-child {
+  margin-left: -20px;
+}
+
+.calender .calender-stars {
+  position: absolute;
+}
+.calender .calender-stars:first-child {
+  top: -60px;
+  left: -180px;
+}
+.calender .calender-stars {
+  bottom: -100px;
+  right: -100px;
+}
+
+@media screen and (max-width: 800px) {
+  .bg-chess {
+    position: relative;
+    height: 300px;
+  }
+  .section2-flex {
+    width: 100%;
+    flex-direction: column;
+    justify-content: center;
+    z-index: 1;
+  }
+
+  .left-sticky {
+    position: relative;
+    height: fit-content;
+    width: 100%;
+    margin: 0;
+  }
+
+  .left-sticky > div {
+    height: fit-content;
+    max-width: unset;
+    padding-bottom: 40px;
+  }
+
+  .left-sticky .left-first > div {
+    width: fit-content;
+    margin: 60px auto 80px auto;
+  }
+
+  .right-scroll {
+    width: 100%;
+  }
+  .right-scroll .inner-non-fill {
+    width: 100%;
+  }
+  .canvas {
+    font-size: 72px;
+  }
+  .week {
+    padding: 60px 55px 40px 55px;
+  }
+  .topic {
+    padding: 30px 25px;
+    background: url(../src/green-dot-long.jpg);
+    background-position-x: right;
+    background-position-y: bottom;
+    background-repeat: no-repeat;
+  }
+  .js-draggable {
+    font-size: 38px;
+  }
+  .inner-fill {
+    padding: 30px 25px;
+  }
+  .running {
+    margin: 40px auto;
+  }
+  .calender-section {
+    padding: 80px 25px;
+  }
+  .calender {
+    text-align: center;
+    z-index: 5;
+  }
+  .calender img:last-child {
+    margin-top: 20px;
+    margin-bottom: 65px;
+  }
+  .calender .calender-pic {
+    width: unset;
+    z-index: 2;
+  }
+  .calender .calender-stars:first-child {
+    top: -50px;
+    left: 0px;
+    z-index: -1;
+  }
+  .calender .calender-stars {
+    bottom: 0px;
+    right: -30px;
+  }
 }
