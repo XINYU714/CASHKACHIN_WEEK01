@@ -150,6 +150,7 @@ span.special-character {
 .topic {
   padding: 45px 0 45px 14%;
   background: url(../src/green-dot-long.jpg);
+  background-size: cover;
   background-position-x: right;
   background-position-y: bottom;
   background-repeat: no-repeat;
