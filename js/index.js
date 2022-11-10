@@ -34,6 +34,33 @@ gsap.to(".typing2", {
     // markers: true,
   },
 });
+gsap.to(".yel-mon", {
+  y: "+=25",
+  ease: Sine.easeOut,
+  scrollTrigger: {
+    trigger: ".yel-mon",
+    start: "top center",
+    scrub: 0.5,
+  },
+});
+gsap.to(".blue-mon", {
+  y: "+=55",
+  ease: Sine.easeOut,
+  scrollTrigger: {
+    trigger: ".blue-mon",
+    start: "top center",
+    scrub: 0.5,
+  },
+});
+gsap.to(".green-mon", {
+  y: "-=35",
+  ease: Sine.easeOut,
+  scrollTrigger: {
+    trigger: ".blue-mon",
+    start: "top center",
+    scrub: 0.5,
+  },
+});
 
 ////section-2
 
@@ -78,4 +105,18 @@ gsap.to(".rotate,.intro::after", {
   ease: "none",
   duration: 6,
   repeat: -1,
+});
+
+// section 3
+const timeLineRunning = gsap.timeline({
+  scrollTrigger: {
+    trigger: ".running",
+    start: "top 85%",
+    end: "top -1%",
+    scrub: true,
+  },
+});
+
+timeLineRunning.to(".running", {
+  xPercent: "50",
 });

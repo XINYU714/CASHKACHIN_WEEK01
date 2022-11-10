@@ -13,7 +13,7 @@
   box-sizing: border-box;
 }
 body {
-overflow-x: hidden;  
+  overflow-x: hidden;
 }
 .bg-black {
   background-color: var(--primary-black);
@@ -74,6 +74,13 @@ div {
   font-size: 80px;
   line-height: 120px;
   letter-spacing: 0.05em;
+}
+@media screen and (max-width: 1440px) {
+  .h1_cn {
+    font-size: 110px;
+    line-height: 150px;
+    letter-spacing: 0.05em;
+  }
 }
 @media screen and (max-width: 800px) {
   .h1_cn {
